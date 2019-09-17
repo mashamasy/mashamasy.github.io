@@ -1,0 +1,2 @@
+# mashamasy.github.io
+хостинг
