@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+    Sub уно()<br>
+'
+' уно Макрос<br>
+'
+' Сочетание клавиш: Ctrl+й<br>
+Сначала мы называем макрос, потом даем емму сочетание клавиш, чтобы быстро вызывать макрос. Потом идет сама команда - в активную ячейку копируй код из данной ячейки.<br>
+'
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
+    ActiveCell.FormulaR1C1 = "привет"<br>
+   End If<br>
+   В этой команде сказано, что если имя листа - Лист1, то выполняй следующую команду.<br>
+End Sub<br>
+Sub Макрос2()<br>
+'
+' Макрос2 Макрос<br>
+'
+' Сочетание клавиш: Ctrl+а<br>
+'
+    
+    Cells.Replace What:="привет", Replacement:="прифет", <br>LookAt:=xlPart, _<br>
+        SearchOrder:=xlByRows, MatchCase:=False, <br>SearchFormat:=False, _<br>
+        ReplaceFormat:=False<br>
+        Сначала опять называем макрос и даем ему сочетание клавиш. После этого даем команду найти одно слово и заменить его другим. если первое слово не то, команда не будет выполняться.<br>
+End Sub<br>
+Sub Макрос3()<br>
+'
+' Макрос3 Макрос<br>
+'
+' Сочетание клавиш: Ctrl+е<br>
+'
+    Range("A3:L16").Select<br>
+    Application.Run "Книга1!Макрос2"<br>
+    Application.Run "Книга1!Макрос2"<br>
+    Application.Run "Книга1!Макрос2"<br>
+    Application.Run "Книга1!Макрос2"<br>
+    Application.Run "Книга1!Макрос2"<br>
+    Selection.Replace What:="прифет", <br>Replacement:="прифет", LookAt:=xlPart, _<br>
+        SearchOrder:=xlByRows, MatchCase:=False, <br>SearchFormat:=False, _<br>
+        ReplaceFormat:=True<br>
+End Sub<br>
+
+
+  </body>
+</html>
