@@ -1,4 +1,4 @@
-  
+    
 <html>
 
 <head>
@@ -101,6 +101,19 @@ document.getElementById("inf1").innerHTML ="";
 document.getElementById("inf1").textContent = "";
       document.getElementById("inf1").textContent =  (ab % 10 )*100+((((ab % 100)-(ab % 10)))/10)*10+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100) 
     }
+
+    function er4() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent =  ((((ab % 100)-(ab % 10)))/10)*100+(ab % 10 )*10+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100) 
+    }
+
+    
+    function er5() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent =  ((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*100+(ab % 10 )*10+((((ab % 100)-(ab % 10)))/10)
+    }
   </script>
 </head>
 
@@ -108,6 +121,8 @@ document.getElementById("inf1").textContent = "";
   <a class="button8" onclick="er()">2.10</a>
   <a class="button8" onclick="er1()">2.12</a>
   <a class="button8" onclick="er3()">2.13</a>
+  <a class="button8" onclick="er4()">2.14</a>
+  <a class="button8" onclick="er5()">2.15</a>
   <div class="layer1">
     <input type="text" value="57" id="var_in">
     <br>
@@ -119,4 +134,3 @@ document.getElementById("inf1").textContent = "";
 </body>
 
 </html>
-
