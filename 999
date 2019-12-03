@@ -1,5 +1,4 @@
-    
-<html>
+    <html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
@@ -7,7 +6,7 @@
   <style>
     @font-face {
       font-family: "Fairy";
-      src: url(https://berdges86.github.io/Fairy_Tale.ttf);
+      src: url(https://mashamasy.github.io/Exo-BoldItalic.ttf);
     }
     
     body {
@@ -15,7 +14,7 @@
       flex-wrap: wrap;
       align-content: space-between;
       overflow: hidden;
-      background: linear-gradient(45deg, blue, gold, lightgreen, gold, red);
+      background: linear-gradient(45deg, blue, lightgreen, green, blue);
       mix-blend-mode: multiply;
     }
     
@@ -114,6 +113,21 @@ document.getElementById("inf1").textContent = "";
 document.getElementById("inf1").textContent = "";
       document.getElementById("inf1").textContent =  ((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*100+(ab % 10 )*10+((((ab % 100)-(ab % 10)))/10)
     }
+    function er6() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent =  (( ( (ab % 100)-(ab % 10) ) )/ 100)+(ab % 10 + (( ( (ab % 100)-(ab % 10) ) )/ 10)+(ab % 10 )*10)
+    }
+    function er8() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent =  ((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*100+(ab % 10 )*10+((((ab % 100)-(ab % 10)))/10)
+    }
+    function er9() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent =  ((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*100+(ab % 10 )*10+((((ab % 100)-(ab % 10)))/10)
+    }
   </script>
 </head>
 
@@ -123,6 +137,9 @@ document.getElementById("inf1").textContent = "";
   <a class="button8" onclick="er3()">2.13</a>
   <a class="button8" onclick="er4()">2.14</a>
   <a class="button8" onclick="er5()">2.15</a>
+  <a class="button8" onclick="er5()">2.16</a>
+  <a class="button8" onclick="er5()">2.17</a>
+  <a class="button8" onclick="er5()">2.18</a>
   <div class="layer1">
     <input type="text" value="57" id="var_in">
     <br>
