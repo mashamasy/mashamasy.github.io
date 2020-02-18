@@ -43,7 +43,6 @@
     sum1 = 0
     sum2 = 0
     flag = 0
-    f=1
     function CreateTable() {
       var x = document.createElement("TABLE");
       x.setAttribute("id", "myTable");
@@ -95,8 +94,7 @@
           z.appendChild(t);
           sum2 += example2;
         
-          example2 = example2 / f;
-            f=f*3;
+          example2 = example2 / 3;
           document.getElementById(temp1).appendChild(z);
           m += 2
         }
