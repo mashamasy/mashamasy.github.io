@@ -80,8 +80,8 @@
           temp2 = "Td" + l
           var z = document.createElement("TD");
           z.setAttribute("id", temp2);
-          sum1 += i/n+1
-          t = document.createTextNode(i/n+1);
+          sum1 += i/(i+1)
+          t = document.createTextNode(i/(i+1));
           z.appendChild(t);
           
           document.getElementById(temp1).appendChild(z);
@@ -126,5 +126,3 @@
 
   <button onclick="myFunction()">test</button>
 </body>
-
-</html>
